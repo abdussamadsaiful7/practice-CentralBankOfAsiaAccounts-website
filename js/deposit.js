@@ -19,7 +19,5 @@ document.getElementById('btn-deposit').addEventListener('click',function(){
     balanceTotalElement.innerText  = currentBalance;
 
 
-
-
     depositField.value = '';
 });
