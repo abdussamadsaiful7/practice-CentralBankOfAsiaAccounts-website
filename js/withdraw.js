@@ -11,7 +11,23 @@ document.getElementById('btn-withdraw').addEventListener('click', function(){
     const currentWithdrawTotal = previousWithdrawAmount + newWithdrawAmount;
     withdrawTotalElement.innerText = currentWithdrawTotal;
 
-    
+    const balanceTotalElement = document.getElementById('balance-total');
+    const balanceAmountString = balanceTotalElement.innerText;
+    const balanceAmount = parseFloat(balanceAmountString);
+
+    const currentBalanceAmount = balanceAmount - newWithdrawAmount;
+    balanceTotalElement.innerText = currentBalanceAmount;
+
+    withdrawField.value ='';
+
+    if( currentBalanceAmount>=0){
+        
+    }
+    else{
+        alert("You have not much Money!");
+    };
+
+
 
 
 });
