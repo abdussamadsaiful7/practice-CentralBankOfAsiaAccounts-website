@@ -7,9 +7,9 @@ document.getElementById('btn-submit').addEventListener('click', function(){
     // danger: do not use for verify email & password
     
     if(email === 'bank@gmail.com' && password === '12345'){
-        console.log('valid User');
+        window.location.href ='http://127.0.0.1:5500/js/bank.html';
     }
     else{
-        console.log('not valid')
+        alert('Please Correct Your Email and Password!')
     }
 });

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bank inside</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body> 
+    <header>
+        <div class="shadow-lg w-9/12 mx-auto m-4">
+            <h1 class="bg-gradient-to-r from-purple-500 to-pink-500 w-9/12 mx-auto text-5xl text-center  text-white font-bold  p-4 rounded-md shadow-lg">Let's get some <span class="font-bold text-green-500" >Money</span>!!!</h1>
+        </div>
+    </header>
+    <section>
+        <div class="grid grid-cols-3 gap-4 w-9/12 mx-auto p-8 shadow-lg">
+            <div class="bg-indigo-400 p-10 shadow-lg rounded-md">
+                <h3 class=" text-3xl text-white font-bold rounded text-center">Deposit</h3>
+                <h2 class="text-4xl text-center font-bold">$<span>00</span></h2>
+            </div>
+            <div class="bg-orange-400 p-10 shadow-lg rounded-md">
+                <h3 class=" text-3xl text-white font-bold rounded text-center ">Withdraw</h3>
+                <h2 class="text-4xl text-center font-bold">$<span>00</span></h2>
+            </div>
+            <div class=" bg-green-400 p-10 shadow-lg rounded-md">
+                <h3 class=" text-3xl text-white font-bold rounded text-center">Balance</h3>
+                <h2 class="text-4xl text-center font-bold">$<span>1240</span></h2>
+            </div>
+        </div>
+    </section>
+    <section>
+        <div class="grid grid-cols-2 gap-4 w-9/12 mx-auto p-8 shadow-lg mt-4 mb-8">
+            <div class="bg-teal-700 p-10 shadow-lg rounded-md">
+                <h3 class=" text-3xl text-white font-bold rounded mb-4">Please Deposit</h3>
+                <input class=" block mb-4 w-9/12 rounded pl-4 shadow-lg py-1" type="text" name="" id="user-email" placeholder="$ Amount you want to Deposit">
+                <button id="btn-submit" class="text-teal-700 font-bold my-4 px-3 py-2 rounded-md shadow-lg block bg-white hover:bg-orange-500 hover:text-white">Submit</button>
+            </div>
+            <div class="bg-fuchsia-700 p-10 shadow-lg rounded-md">
+                <h3 class=" text-3xl text-white font-bold rounded mb-4">Please Withdraw</h3>
+                <input class=" block mb-4 w-9/12 rounded pl-4 shadow-lg py-1" type="text" name="" id="user-email" placeholder="$ Amount you want to Withdraw">
+                <button id="btn-submit" class="text-fuchsia-700 font-bold my-4 px-3 py-2 rounded-md shadow-lg block bg-white hover:bg-orange-500 hover:text-white">Submit</button>
+            </div>
+        </div>
+    </section>
+    
+</body>
+</html>
